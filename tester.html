@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+       <link rel="stylesheet" href="style1.css">
+       <title>Document</title>
+       <script>
+              function resetInput() {
+                  document.getElementById('question').value = '';
+              }
+       </script>
+</head>
+<style>
+
+</style>
+<body>
+       <div class="formdiv">
+              <form onsubmit="return false" method="post" action="form.py">
+                     <p>
+                            <label name="FullName" for="FullName">Full Name:</label>
+                            <input type="text" name="FullName" id="FullName" required>
+                     </p>
+                     <p>
+                            <label name="email" for="email">Email:</label>
+                            <input type="email" name="email" id="email" required>
+                     </p>
+                     <p>
+                            <label name="question" for="question">Your question:</label>
+                            <input typer="question" name="question" id="question" required></input>
+                     </p>  
+                     <input pys-onClick="sub" type="submit" id="formbuttonsubmit" class="submit" value="submit">
+              </form>
+       </div>    
+       <py-script src="form.py"></py-script>
+       <div id="output"></div>
+</body>
+</html>

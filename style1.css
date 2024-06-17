@@ -1,0 +1,43 @@
+.formdiv {
+    margin:auto;
+    width:90%;
+    border:1px solid black;
+    padding: 10px;
+    text-align:right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:.85em;
+}
+
+input,textarea{
+    width: 80%;
+    border: 1px solid black;
+}
+
+label {
+    vertical-align: top;
+}
+
+.buttondiv {
+    width:60%;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.button {
+    text-align: center;
+}
+
+#output {
+    margin:auto;
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .85em;
+}
+
+.fullname {
+    margin: 1rem auto;
+    border:black;
+}

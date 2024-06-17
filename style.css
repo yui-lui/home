@@ -1,0 +1,279 @@
+:root {
+    --ff-primary: Heebo, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  display: block;
+  width:100%;
+}
+
+.headimage {
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black,transparent);
+}
+
+body {
+    background-color: rgb(234, 176, 187);
+    margin:0 auto;
+    width: 100%;
+}
+
+
+
+.navcon {
+    max-width:90%;
+    min-width:90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 25px;
+    padding: 1rem;
+    border: 3px solid rgb(205, 122, 137);
+    gap:1em;   
+    position:relative;
+    background-image: url("flowersb.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+.navcolor{
+    background: rgba(250, 237, 240, 0.82);
+    border: 3px solid rgb(205, 122, 137);
+    border-radius: 15px;
+    width:100%;;
+    top:0;
+    font-size: 2vw;
+}
+
+.navcolor a{
+    float:left;
+    margin:1rem;
+    display:block;
+    color: rgb(162, 3, 53);
+    text-align:center;
+    transition: 0.3s;
+}
+
+.navcolor a:hover {
+    background-color:rgba(212, 26, 60, 0.482);
+    border-radius: 5px;
+    color: rgb(250, 237, 240);
+}
+
+.content{
+    min-width: 90%;
+    max-width:90%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background: transparent;
+    border: 3px solid rgb(205, 122, 137);
+    background-image: url("petalrain.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 25px;
+}
+
+.container > * {
+    flex: 1 0 30%
+}
+
+.item {
+    padding: 3rem;
+    background: rgba(250, 237, 240, 0.82);
+    border: 3px solid rgb(205, 122, 137);
+    border-radius: 25px;
+    transition: 0.6s;
+    font-size: 2vw;
+    color: rgb(205, 122, 137);
+    position: relative;
+}
+
+.chartcon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 25px;
+    margin: 1rem auto;
+    border-radius:25px;
+}
+.chartcon > * {
+    flex: 1 0 100%
+}
+
+.chartitem {
+    padding: 3rem;
+    background: rgba(250, 237, 240, 0.82);
+    border: 3px solid rgb(205, 122, 137);
+    border-radius: 25px;
+    transition: 0.6s;
+    font-size: 2vw;
+    color: rgb(205, 122, 137);
+    position: relative;
+
+}
+
+input[type=submit] {
+    background-color: rgba(250, 237, 240);
+    padding:1rem;
+    color: rgb(205, 122, 137);
+    border-radius: 25px;
+    border: 2px solid rgb(205, 122, 137);
+    font-size:2rem
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: rgb(205, 122, 137);
+    color: rgba(250, 237, 240);
+}
+
+.quizitem {
+    background-color: rgba(250, 237, 240);
+    color: rgb(205, 122, 137);
+    border-radius: 25px;
+    border: 2px solid rgb(205, 122, 137);
+    font-size:2rem;
+    text-align:center;
+    position: relative;
+    margin: 1rem auto;
+}
+.imgdescription {
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    border-radius:22px;
+    position:absolute;
+    background: rgba(233, 96, 135, 0.2);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+    color:rgb(61, 8, 17);
+    font-size: 3vw;
+  }
+
+.imgdescription:hover{
+    opacity:1;
+    margin-top: 100;
+}
+
+
+.footcon {
+    max-width: 90%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background: transparent;
+    border: 3px solid rgb(205, 122, 137);
+
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 15px;
+    background-image: url("sancafe.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.footitem {
+    padding:20px;
+    min-width: 100%;
+    color:rgb(205, 122, 137);
+    background-color: rgb(250, 237, 240,0.92);
+    border-radius: 15px;
+    border: 2px solid rgb(205, 122, 137);
+}
+
+.divdiv {
+    background-image: url("sanriolinee.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 200px 30px;
+    color: rgba(0, 0, 0, 0);
+    padding:3px;
+}
+
+.formdiv {
+    margin:1rem auto;
+    width:90%;
+    border:1px solid black;
+    padding: 10px;
+    text-align:right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:.85em;
+}
+
+input,textarea{
+    width: 80%;
+}
+
+label {
+    vertical-align: top;
+}
+
+.buttondiv {
+    width:60%;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.button {
+    text-align: center;
+}
+
+#output {
+    margin:auto;
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .85em;
+}
+
+.fullname {
+    margin: 1rem auto;
+    border:black;
+}
+  /*<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>*/
+
+  /*                    Who is your favorite character? <br>
+                    <select name="fav" id="fav">Who is your favorite character?<br>
+                        <option value="Cinna">Cinnamoroll</option><br>
+                        <option value="Pom">Pompompurin</option><br>
+                        <option value="Kuro">Kuromi</option><br>
+                        <option value="Poch">Pochacco</option><br>
+                        <option value="Mmy">My Melody</option><br>
+                        <option value="Hang">Hangyodon</option><br>
+                        <option value="Twin">Little Twin Stars</option><br>
+                        <option value="Sam">Tuexedosam</option><br>
+                        <option value="Bad">Bad Batz-Maru</option><br>
+                        <option value="Kero">Keroppi</option><br>
+                        <option value="Gude">Gudetama</option><br>

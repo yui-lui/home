@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>popularity</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet">
+    
+</head>
+<body>
+    <img src="sanriostraw.jpeg" alt="characters" class="headimage" >
+    <div class="topnav">
+        <div class="navcon">
+            <div class="navcolor">
+                <div class="navitem">
+                    <a href="http://homer.stuy.edu/~khuang61/homepage.html">ᝰ.ᐟHome⋆໒꒱</a>
+                </div>
+                <div class="navitem">
+                    <a href="#">ᝰ.ᐟPochacco⋆໒꒱</a>
+                </div>
+                <div class="navitem">
+                    <a href="#">ᝰ.ᐟPopularity+Quiz⋆໒꒱</a>
+                </div>
+                <div class="navitem">
+                    <a href="#">ᝰ.ᐟForm⋆໒꒱</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <py-script>
+
+        </py-script>
+    </div>
+    <div class="content chartcon">
+            <div class="chartitem">
+                <img src="rankingchart.png" alt="popularitychart" style="border-radius:5%; margin:1rem auto;">  
+            </div >
+            <div class="item quizitem">
+                <onsubmit="return false">
+                    ╰┈➤Who won the Sanrio Character Ranking 2023?ᥫ᭡<br>
+                    <select name="fav" id="fav">Who won the Sanrio Character Ranking 2023?<br>
+                    <option value="Cinna">Cinnamoroll</option><br>
+                    <option value="Pom">Pompompurin</option><br>
+                    <option value="Poch">Pochacco</option><br>
+                    <option value="Hky">Hello Kitty</option><br>
+                    </select>
+                    <br><br>
+                    ╰┈➤How many characters appear in the footer?ᥫ᭡ <br>
+                    <select name="numberfooter" id="numberfooter">How many characters appear in the footer?<br>
+                    <option value="two">2</option><br>
+                    <option value="three">3</option><br>
+                    <option value="four">4</option><br>
+                    <option value="five">5</option><br>
+                    </select>
+                    <br><br>
+                    ╰┈➤What is not one of Pochacco's hobbies?ᥫ᭡ <br>
+                    <select name="hobby" id="hobby">How many characters appear in the footer?<br>
+                    <option value="Basketball">Three-on-three basketball</option><br>
+                    <option value="Bicycle">Riding his bicycle</option><br>
+                    <option value="Soccer">Soccer</option><br>
+                    <option value="Skateboarding">Skateboarding</option><br>
+                    </select>
+                    <br><br>
+                    ╰┈➤Name of the character picked up by the crane below?ᥫ᭡ <br>
+                    <select name="crane" id="crane">How many characters appear in the footer?<br>
+                    <option value="Pocha">Pochacco</option><br>
+                    <option value="Gudet">Gudetama</option><br>
+                    <option value="Cinnam">Cinnamoroll</option><br>
+                    <option value="Pomp">Pompompurin</option><br>
+                    </select>
+                    <br><br>
+                    <input pys-onClick="sub" type = "submit" id="btn-form" value = "Submit"/>
+                </form>
+            </div>
+                <div class=quizitem><p>Score:</p>
+                <div id = 'output'></div></div>
+                <py-script>
+            def sub(*args,**kwargs):
+                result_place = Element('output')
+                score = 0
+                if Element('fav').value == 'Cinna':
+                       score += 1
+                if Element('numberfooter').value == 'four':
+                       score += 1
+                if Element('hobby').value == 'Bicycle':
+                       score += 1
+                if Element('crane').value == 'Pomp':
+                       score += 1
+                if score == 4:
+                       result_place.write('ᯓᡣ𐭩Your Score࿓4/4')
+                if score == 3:
+                       result_place.write('ᯓᡣ𐭩Your Score࿓3/4')
+                if score == 2:
+                       result_place.write('ᯓᡣ𐭩Your Score࿓2/4')
+                if score == 1:
+                       result_place.write('ᯓᡣ𐭩Your Score࿓1/4')
+                if score == 0:
+                       result_place.write('ᯓᡣ𐭩Your Score࿓0/4')
+                </py-script>
+            <div class="item">
+                <img src="vendingcute.gif" alt="crawmachine" style="border-radius:3%">
+            </div>
+    </div>
+    <div class="footcon footer">
+        <div class="footitem">
+            <h1>x
+                <br>
+                x
+                <br>
+                x
+                <br>
+                x
+                <br>
+                x
+            </h1>
+        </div>
+    </div>
+    <div class="divdiv">
+        <p>hi</p>   
+    </div>
+</body>
+</html>
+    
